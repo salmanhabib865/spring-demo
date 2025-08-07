@@ -9,9 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>httpTohttps</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>httpTohttps</name>
+	<artifactId>springDemo</artifactId>
+	<name>springDemo</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

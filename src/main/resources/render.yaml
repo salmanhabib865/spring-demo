@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: hotelmanagement
+    runtime: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/hotelmanagement.war
+    env: java
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+      - key: SERVER_PORT
+        value: $PORT
+    disk:
+      name: hotelmanagement-disk
+      mountPath: /var/lib/hotelmanagement
+      sizeGB: 1
